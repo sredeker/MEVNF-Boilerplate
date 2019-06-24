@@ -1,7 +1,7 @@
 # MEVNF-boilerplate
 A fullstack boilerplate with Mongo, ExpressJS, VueJS, NodeJS and Foundation-Sites.
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOOiKh1Xk5RDZFKPkVXYfi8U-t2cuotiAOR7G_7w_HWXfV02TMnd9wnVM" height="50" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png" height="50" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/docs/Vue.js_Logo.svg.png" height="50" />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Node.js_logo_2015.svg" height="50" />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://zurb-dot-com-prod.s3.amazonaws.com/asset/665/raw_2Fef82d607-243f-4eda-922c-f1e42ddf7a39_2FFoundation-for-Sites.png" height="50"
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOOiKh1Xk5RDZFKPkVXYfi8U-t2cuotiAOR7G_7w_HWXfV02TMnd9wnVM" height="50" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png" height="50" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/docs/Vue.js_Logo.svg.png" height="50" />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Node.js_logo_2015.svg" height="50" />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://zurb-dot-com-prod.s3.amazonaws.com/asset/665/raw_2Fef82d607-243f-4eda-922c-f1e42ddf7a39_2FFoundation-for-Sites.png" height="50" />
 
 A skeleton generated with MEVN stack technologies which can be used as a boilerplate for anyone who is starting out. It contains a client template(**VueJS**) and a server template(**NodeJS**, **ExpressJS**) and a connection between them via an API layer. It also includes a SASS compiler and Foundation-Sites SASS Library for a semantic, readable, flexible, responsive and completely customizable UI framework.
 
@@ -35,24 +35,34 @@ npm run dev
 
 
 ## Additional build tasks
-# build for production with minification
+##### build for production with minification
+```
 npm run build
+```
 
-# build for production and view the bundle analyzer report
+##### build for production and view the bundle analyzer report
+```
 npm run build --report
+```
 
-# run unit tests
+##### run unit tests
+```
 npm run unit
+```
 
-# run e2e tests
+##### run e2e tests
+```
 npm run e2e
+```
 
-# run all tests
+##### run all tests
+```
 npm test
+```
 
 
-## Remove MongoDB Connection
-To connect to a remote MongoDB instance update the connection path in `server/server.js`
+## Remote MongoDB Connection
+To connect to a remote MongoDB instance update the url in `server/server.js` with your connection string provided by your remote settings:
 ```
 const uri = "mongodb://localhost:27017/posts";
 mongoose.connect(uri);
